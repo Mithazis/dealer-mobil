@@ -33,8 +33,12 @@ export default function HomePage() {
         <div className="text-2xl font-extrabold text-[#00ffcc]">Dealer Non Geulis</div>
         <nav className="space-x-5">
           <a href="#" className="hover:text-[#00ffcc] transition">Beranda</a>
-          <a href="#mobil" className="hover:text-[#00ffcc] transition">Koleksi Mobil</a>
-          <a href="#kontak" className="hover:text-[#00ffcc] transition">Kontak</a>
+          <button
+          onClick={ () => (window.location.href = '/koleksi')}
+          className="hover:text-[#00ffcc] transition">Koleksi Mobil</button>
+          <a href="https://wa.me/6282117774545?text=Halo%2C%20apakah%20mobil%20BMW%20M4%20Coupe%202022%20ini%20masih%20ada%3F%20%0AGambar%3A%20https%3A%2F%2Fexample.com%2Fgambar%2FBMWM4_1.jpg"
+          target="_blank"
+          className="hover:text-[#00ffcc] transition">Kontak</a>
         </nav>
       </header>
 
